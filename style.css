@@ -91,6 +91,8 @@ main{
   background-repeat: no-repeat;
 }
 main .main-content{
+
+  /* overflow-x: hidden; */
   margin: 100px 150px;
   display: flex;
   align-items: center;
@@ -100,6 +102,7 @@ main .content{
   max-width: 550px;
   
 }
+
 .content-img img{
   margin-bottom: -3px;
 }
@@ -134,6 +137,12 @@ main .content{
  color: rgba(117, 117, 117, 1);
 
 }
+.what{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 200px;
+}
 .items{
   display: flex;
   
@@ -162,6 +171,7 @@ card{
 .resume{
   display: flex;
   gap: 25px;
+  /* overflow-x: hidden; */
 }
 .resume-title{
   font-size: 35px;
@@ -184,6 +194,7 @@ card{
 .footer{
   background-color: rgba(255, 248, 243, 1);
   padding: 130px 230px;
+  overflow-x: hidden;
   display: flex;
   gap: 25px;
 }
@@ -229,9 +240,16 @@ textarea{
   .btn-secondary{
     margin: -3px 26px;
   }
+  .what{
+    padding: 0;
+  }
   .section {
     margin: 10px -6px;
+    /* width: 100%; */
     padding: 13px 13px;
+}
+main .main-content{
+  overflow-x: hidden;
 }
 .section-primary {
   font-size: 25px;
@@ -241,5 +259,26 @@ textarea{
 .footer{
   padding: 20px 25px;
 }
+.content-img{
+  overflow-x: hidden;
+}
 }
 
+@media screen and (min-width:576px) and (max-width:992px) {
+  .section {
+    margin: 0px 40px;
+    padding: 30px 29px;
+}
+main .main-content{
+  padding: 10;
+  margin: 30px;
+
+}
+.card-section{
+  flex-direction: column;
+  gap: 20px;
+}
+.footer{
+  padding:50px 38px;
+}
+}
