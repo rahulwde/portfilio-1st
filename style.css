@@ -231,7 +231,7 @@ textarea{
   .main-content .content .title {
     font-size: 44px;}
   main .main-content {
-    margin: 0px 90px;
+    margin: 0px 10px;
     
   }
   .btn-primary{
@@ -275,10 +275,24 @@ main .main-content{
 
 }
 .card-section{
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  
   gap: 20px;
+}
+card{
+  height: 200px;
 }
 .footer{
   padding:50px 38px;
 }
+
+  .what {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 33px 74px;
+}
+
 }
